@@ -3,5 +3,6 @@
   hosts: all
   gather_facts: no
   tasks:
+    - debug: msg="hello from ansible"
     - debug: var=miq_provision_id
     - debug: var=miq_provision_request_id
