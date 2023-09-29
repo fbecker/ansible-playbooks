@@ -4,6 +4,7 @@
   gather_facts: no
   vars:
     ansible_connection: ssh
+    ansible_shell_type: cmd
   tasks:
     - name: Create Folder
       ansible.windows.win_file:
