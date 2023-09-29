@@ -8,6 +8,6 @@
   tasks:
     - name: Create Folder
       ansible.windows.win_file:
-        path: 'C:\miq'
+        path: 'C:\{{ foo_role }}'
         state: directory
 ...
