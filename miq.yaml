@@ -8,6 +8,6 @@
   tasks:
     - name: Create Folder
       ansible.windows.win_file:
-        path: 'C:\{{ foo_role }}'
+        path: 'C:\{{ my_role }}'
         state: directory
 ...
