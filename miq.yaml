@@ -1,0 +1,10 @@
+---
+- name: Run some tasks
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Create Folder
+      ansible.windows.win_file:
+        path: 'C:\miq'
+        state: directory
+...
